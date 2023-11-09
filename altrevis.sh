@@ -1,10 +1,23 @@
+#!/bin/bash
+
+# Script Name: altrevis.sh
+# Description: An easy-to-use, beginner-oriented tool to align DNA/RNA or protein sequences, infer a ML-like phylogenetic tree from the alignment and visualize it.
+# Author: Astra Bertelli
+# Date: November 9, 2023
+# Version: 1.0.0
+# Please consider to cite the author of this script and the original GitHub repository when using altrevis for your projects
+
+
 # Usage function
 usage() {
     echo "Usage: altrevis -i,--infile INFILE [-at, --alignment_type nt OR aa]
 
     REQUIRED ARGUMENTS:
-    -i, --infile: Provide the path to the original fasta file from which to start the phylogenetic analysis
-    -at, --alignment_type: Choose between nt (for DNA/RNA alignment) and aa (for protein alignments): default is nt."
+        -i, --infile: Provide the path to the original fasta file from which to start the phylogenetic analysis
+    OPTIONAL ARGUMENTS:
+        -at, --alignment_type: Choose between nt (for DNA/RNA alignment) and aa (for protein alignments): default is nt.
+        
+    Input altrevis -h to show this message again."
     exit 1
 }
 
