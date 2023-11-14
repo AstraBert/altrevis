@@ -1,4 +1,4 @@
-source              : .
+source              : ./README.md
 theme               : jekyll-theme-Architect
 destination         : ./_site
 collections_dir     : .
