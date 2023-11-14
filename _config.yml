@@ -1,4 +1,5 @@
 title               : altrevis
+permalink           : /:year/:month/:day/:title.html
 source              : ./README.md
 theme               : jekyll-theme-Architect
 destination         : ./_site
