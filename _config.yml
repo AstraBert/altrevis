@@ -1,3 +1,4 @@
+title               : altrevis
 source              : ./README.md
 theme               : jekyll-theme-Architect
 destination         : ./_site
