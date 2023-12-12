@@ -32,19 +32,18 @@ This will put you in sudo-mode. with administrator-only permission that will all
 
 ```bash
 #This code assumes you remained in the same working directory as before
-bash ./altrevis/install_dependencies.sh
+cd altrevis
+bash install_dependencies.sh
 ```
 This script will recognize the Linux distribution you are using and install the needed dependencies with the right method for it. 
 
-Now that you're done, set up an alias to make running altrevis less verbose:
+Now that you're done, remain in the altrevis directory and set up an alias to make running altrevis less verbose:
 
 ```bash
-echo "alias altrevis='bash /absolute/path/to/altrevis/altrevis.sh'" >> ~/.bash_aliases
+folder=$(realpath altrevis.sh)
+echo "alias altrevis='bash ${folder}'" >> ~/.bash_aliases
 source ~/.bash_aliases
-source ~/.bashrc
 ```
-
-Make sure to replace `/absolute/path/to/altrevis/altrevis.sh` with the actual absolute path to `altrevis.sh` script
 
 ## How does altrevis work?
 
