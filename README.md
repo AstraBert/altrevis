@@ -45,6 +45,17 @@ echo "alias altrevis='bash ${folder}'" >> ~/.bash_aliases
 source ~/.bash_aliases
 ```
 
+Alternatively, you could download the .tar.gz archive that you can find in the Releases page, then move to the folder where you downloaded it and run:
+```bash
+tar -xzvf ./altrevis.tar.gz
+cd altrevis
+sudo echo "Thank you, $USER, for choosing altrevis!" 
+bash install_dependencies.sh
+folder=$(realpath altrevis.sh)
+echo "alias altrevis='bash ${folder}'" >> ~/.bash_aliases
+source ~/.bash_aliases
+```
+
 ## How does altrevis work?
 
 To get altrevis to work, you just need to provide the path to the unaligned file, where all the sequences are stored, and to specify the alignment type (nucleotides or proteins: if not specified, the default is nucleotide).
