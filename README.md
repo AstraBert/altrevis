@@ -25,7 +25,7 @@ git clone https://github.com/AstraBert/altrevis
 This will add an `altrevis` folder to your working directory: there you will find all the things you can see in the GitHub page. Before getting to work with the actual pipeline script, altrevis.sh, you should run in your terminal:
 
 ```bash
-sudo
+sudo echo "Thank you, $USER, for choosing altrevis!"  
 ```
 
 This will put you in sudo-mode. with administrator-only permission that will allow you to proceed further in the installation: Linux will now require you to input the password. After having entered this mode, just go and run:
